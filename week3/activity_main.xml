@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.win10v3.myapplication.MainActivity">
+
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รหัสนักศึกษา"
+        android:textSize="20"/>
+
+    <EditText
+    android:id="@+id/Edit_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint=": กรอกหรัสนักศึกษา" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:text="ชื่อ"
+            android:textSize="20"/>
+
+        <EditText
+            android:id="@+id/Edit_Name"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:hint=": กรอกชื่อ" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:text="อายุ"
+            android:textSize="20"/>
+
+        <EditText
+            android:id="@+id/Edit_age"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:hint=": กรอกอายุ" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:text="สาขา"
+            android:textSize="20"/>
+
+        <EditText
+            android:id="@+id/major_age"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:hint=": กรอกสาขา" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10pt">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10pt"
+            android:text="add"
+            android:onClick="add_text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10pt"
+            android:text="delete"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10pt"
+            android:text="edit"/>
+    </LinearLayout>
+
+</LinearLayout>
